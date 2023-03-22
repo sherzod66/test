@@ -15,7 +15,14 @@
     </div>
     <canvas class="webgl"></canvas>
     <section></section>
-    <script href='script.js'></script>
+    <script type="importmap">
+		{
+		  "imports": {
+			"three": "https://unpkg.com/three@0.145.0/build/three.module.js"
+		  }
+		}
+	</script>
+	<script src="./js/script.js" type="module"></script>
 </body>
 
 </html>
