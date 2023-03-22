@@ -17,6 +17,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
 	50, window.innerWidth / window.innerHeight, 0.1, 1000
 );
+camera.position.set(0, 0.3, 0.4);
 
 const assetsLoader = new GLTFLoader();
 
@@ -57,19 +58,11 @@ pointLight.shadow.mapSize.height = 2048;
 pointLight.position.set(-0.5, 1, 0.5);
 pointLight.castShadow = true;
 
-camera.position.set(0, 0.3, 0.4);
+
 
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.update();
-/*
-const mousePosition = { x: 0, y: 0 }
 
-window.addEventListener('mousemove', event => {
-	mousePosition.x = event.clientX / secondElem.clientWidth - 0.5;
-	mousePosition.y = event.clientY / secondElem.clientHeight;
-
-})
-*/
 
 function animate(time) {
 	requestAnimationFrame(animate);
