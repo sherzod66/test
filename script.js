@@ -71,7 +71,7 @@ function animate(time) {
 animate();
 
 window.addEventListener('resize', event => {
-	camera.aspect = secondElem.clientWidth / secondElem.clientHeight;
+	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix()
-	renderer.setSize(secondElem.clientWidth, secondElem.clientHeight);
+	renderer.setSize(window.innerWidth, window.innerHeight);
 });
