@@ -61,7 +61,7 @@ camera.position.set(0, 0.3, 0.4);
 
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.update();
-
+/*
 const mousePosition = { x: 0, y: 0 }
 
 window.addEventListener('mousemove', event => {
