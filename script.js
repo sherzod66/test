@@ -3,7 +3,7 @@ import * as THREE from 'three';
  const textureLoader =  new THREE.TextureLoader();
  
   
-    const normalTexture = textureLoader.load('assets/images/NormalMap.png')
+    const normalTexture = textureLoader.load('assets/NormalMap.png')
     normalTexture.minFilter = THREE.LinearFilter;
 
 
