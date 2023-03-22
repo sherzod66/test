@@ -10,7 +10,6 @@ const renderer = new THREE.WebGLRenderer({ antialias: true, optimization: true }
 renderer.setPixelRatio(devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
-renderer.setClearColor(0xff00bf)
 renderer.shadowMap.enabled = true;
 
 const scene = new THREE.Scene();
@@ -78,6 +77,7 @@ function animate(time) {
 	if (model) {
 		model.rotation.y = time / 4000;
 	}
+	console.log(camera.position)
 }
 animate();
 
