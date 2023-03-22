@@ -67,9 +67,7 @@ orbit.update();
 function animate(time) {
 	requestAnimationFrame(animate);
 	renderer.render(scene, camera);
-	if (model) {
-		model.rotation.y = time / 4000;
-	}
+
 	console.log(camera.position)
 }
 animate();
