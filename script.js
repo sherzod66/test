@@ -2,7 +2,7 @@ import * as THREE from 'three';
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.145.0/examples/jsm/loaders/GLTFLoader.js'
 const donut = new URL('model/ponchik.glb', import.meta.url);
-//const plane = new URL('../model/plane.glb', import.meta.url);
+
 
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, optimization: true });
