@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.145.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://unpkg.com/three@0.145.0/examples/jsm/loaders/GLTFLoader.js'
 const donut = new URL('model/ponchik.glb', import.meta.url);
 
@@ -36,15 +36,7 @@ assetsLoader.load(donut.href, function (gltf) {
 	console.log(error);
 }
 );
-/*assetsLoader.load(plane.href, function (gltf) {
-	const plane = gltf.scene;
-	scene.add(plane);
-	plane.position.set(0, 0, 0);
-	plane.receiveShadow = true
-}, undefined, function (error) {
-	console.log(error);
-}
-);*/
+
 
 const planeG = new THREE.PlaneGeometry(10, 10);
 const planeM = new THREE.MeshStandardMaterial({
@@ -67,10 +59,10 @@ pointLight.position.set(-0.5, 1, 0.5);
 pointLight.castShadow = true;
 
 camera.position.set(0, 0.3, 0.4);
-/*
+
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.update();*/
-/*
+
 const mousePosition = { x: 0, y: 0 }
 
 window.addEventListener('mousemove', event => {
