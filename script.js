@@ -66,7 +66,7 @@ pointLight.shadow.mapSize.height = 2048;
 pointLight.position.set(-0.5, 1, 0.5);
 pointLight.castShadow = true;
 
-camera.position.set(0, 1, 2);
+camera.position.set(0, 0.5, 0.6);
 /*
 const orbit = new OrbitControls(camera, renderer.domElement);
 orbit.update();*/
