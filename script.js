@@ -40,7 +40,7 @@ assetsLoader.load(donut.href, function (gltf) {
 
 const planeG = new THREE.PlaneGeometry(10, 10);
 const planeM = new THREE.MeshStandardMaterial({
-	color: 0x7e7e7c,
+	color: 0xebeeeb,
 	side: THREE.DoubleSide
 });
 const plane = new THREE.Mesh(planeG, planeM);
@@ -75,4 +75,5 @@ window.addEventListener('resize', event => {
 	camera.updateProjectionMatrix()
 	renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
 
